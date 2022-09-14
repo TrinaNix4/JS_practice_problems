@@ -62,3 +62,15 @@ when "Bob's Burgers"
 else 
   puts "I don't know who voices this character"
 end 
+
+#ruby .respond_to?
+# .respond_to? takes a symbol representing a method name and returns true if that method can be called on the object and false otherwise
+
+puts "A".respond_to?(:push)
+# => false
+# here, the following ruby code will return false since .push can't be called on a string object 
+
+puts "A".respond_to?(:next)
+# => true
+# ruby code will return true since .next can be called on a string object 
+
