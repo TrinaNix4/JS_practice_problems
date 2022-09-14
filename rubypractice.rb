@@ -91,3 +91,14 @@ def yield_test
 end 
 
 yield_test {puts ">>> I'm butting into the method!"}
+
+#ruby proc
+#a proc is an instance of the Proc class and is similar to a block. as opposed to a block, a proc is a ruby object which can be stored in a variable and therefore reused many times throughout a program 
+
+square = Proc.new {|x| x ** 2}
+#a proc is defined by calling Proc.new followed by a block
+
+[2, 4, 6].collect!(&square)
+#when passing a proc to a method, an & is used to convert the proc into a  block 
+
+puts [2, 4, 6].collect!(&square)
