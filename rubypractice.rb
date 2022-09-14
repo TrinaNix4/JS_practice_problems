@@ -80,3 +80,14 @@ first_arr = [3, 4, 5]
 second_arr = first_arr.collect {|num| num * 5}
 
 print second_arr
+
+#ruby yield keyword 
+#used to transfer control from a method to a block and then back to the method once executed
+
+def yield_test
+  puts "I'm inside the method"
+  yield
+  puts "I'm also inside the method."
+end 
+
+yield_test {puts ">>> I'm butting into the method!"}
