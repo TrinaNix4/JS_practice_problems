@@ -74,3 +74,9 @@ puts "A".respond_to?(:next)
 # => true
 # ruby code will return true since .next can be called on a string object 
 
+#.collect method
+# takes a block and applies the expression in the block to every element of an array
+first_arr = [3, 4, 5]
+second_arr = first_arr.collect {|num| num * 5}
+
+print second_arr
