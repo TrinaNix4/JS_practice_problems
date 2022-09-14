@@ -14,7 +14,7 @@ puts my_bologna[:second_name]
 
 my_colors = {
   :color1 => "purple",
-  :color2 => "black"
+  :color2 => "black",
   #key symbols and their values can be defined with hash rocket
   :favorite? => true
 }
@@ -22,6 +22,17 @@ my_colors = {
 my_progress = {
   program: "Codecademy",
   language: "Ruby",
-  enthusiastic? = true
+  enthusiastic?: true
 }
 #can also be defined with a colon instead of hash rocket 
+
+#Ruby .select method
+# the .select method can be used to grab specific values from a hash that meet certain criteria 
+
+olympic_trials = {
+  Sally: 9.58,
+  John: 9.69,
+  Bob: 14.91
+}
+
+olympic_trials.select {|name, time| time < 10.0}
