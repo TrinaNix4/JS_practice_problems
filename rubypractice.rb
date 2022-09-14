@@ -52,7 +52,7 @@ eren_jaeger.each_value {|value| puts value}
 #ruby case statement
 #a case statement is a more concise alternative to an if/else statement that contains many conditions
 
-tv_show = "Bob's Burgers"
+tv_show = "Angela"
 
 case tv_show
 when "Archer"
