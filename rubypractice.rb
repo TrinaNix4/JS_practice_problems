@@ -102,3 +102,8 @@ square = Proc.new {|x| x ** 2}
 #when passing a proc to a method, an & is used to convert the proc into a  block 
 
 puts [2, 4, 6].collect!(&square)
+
+#summary
+#a block is just a bit of code between do..end or {}.  it's not an object on its own, but it can be passed to methods like .each or .select 
+
+# 
