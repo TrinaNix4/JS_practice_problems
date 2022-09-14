@@ -36,3 +36,15 @@ olympic_trials = {
 }
 
 olympic_trials.select {|name, time| time < 10.0}
+
+#ruby .each_key &  .each_value
+#used to iterate over only the keys or only the values in a hash
+
+eren_jaeger = {
+  age: 15,
+  enemy: "titans",
+  branch: "Survey Corps"
+}
+
+eren_jaeger.each_key {|key| puts key}
+eren_jaeger.each_value {|value| puts value}
