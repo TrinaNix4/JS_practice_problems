@@ -107,3 +107,6 @@ puts [2, 4, 6].collect!(&square)
 #a block is just a bit of code between do..end or {}.  it's not an object on its own, but it can be passed to methods like .each or .select 
 
 # a proc is  saved block we can use over and over
+
+#a lambda is just like a proc, only it cares about the number of arguments it gets and it returns to its calling method rather than returning immediately 
+
