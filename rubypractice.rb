@@ -110,3 +110,4 @@ puts [2, 4, 6].collect!(&square)
 
 #a lambda is just like a proc, only it cares about the number of arguments it gets and it returns to its calling method rather than returning immediately 
 
+#a lambda is just like a proc, only it cares about the number of arguments it gets and it returns to its calling method rather than returning immediately 
