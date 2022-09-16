@@ -126,3 +126,11 @@ symbolize = lambda { |x| x.to_sym }
 #use symbolize with .collect method to convert items in strings to symbols
 
 symbols = strings.collect(&symbolize)
+
+#lambda vs proc
+#a lambda checks the # of arguments passed to it, a proc does not
+#a lambda will throw an error if you pass it the wrong # of arguments, where a proc will ignore unexpected arguments and assign nil to any that are missing 
+
+#when a lambda returns, it passes control back to the calling method; 
+#when a proc returns, it does so immediately, without going back to calling method 
+
