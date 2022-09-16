@@ -110,4 +110,19 @@ puts [2, 4, 6].collect!(&square)
 
 #a lambda is just like a proc, only it cares about the number of arguments it gets and it returns to its calling method rather than returning immediately 
 
-#a lambda is just like a proc, only it cares about the number of arguments it gets and it returns to its calling method rather than returning immediately 
+#lambda syntax
+#lambda { |param| block}
+
+#lambdas useful in the same situations you'd use a proc
+
+#an array of strings, but we want an array of symbols
+
+strings = ["leonardo", "donatello", "raphael", "micheangelo"]
+
+#create a variable called symbolize. in symbolize, store a lambda that takes one parameter and calls .to_sym on that parameter
+
+symbolize = lambda { |x| x.to_sym }
+
+#use symbolize with .collect method to convert items in strings to symbols
+
+symbols = strings.collect(&symbolize)
